@@ -1,0 +1,60 @@
+#parentContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 500px;
+}
+
+#dropDownContainer {
+    display: grid;
+    height: 120px;
+    grid-template-columns: 100px;
+}
+
+.card {
+border: solid;
+height: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+#dropDownContainer:hover .hidden {
+    display: block;
+}
+
+#mobileContainer {
+    border: solid;
+    width: 200px;
+}
+#scrollBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    white-space: nowrap;
+}
+.scrollButton {
+    display: inline;
+}
+
+#slideContainer {
+    border: solid;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#carousel {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.slide {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
