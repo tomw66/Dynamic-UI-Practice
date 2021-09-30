@@ -1,7 +1,10 @@
-function next(e) {
-    e.scrollTo(300, 0, smooth)
+function next() {
+    document.getElementById('slideContainer').scrollLeft += 300;
 }
 
-function previous(e) {
-    e.scrollTo(-300, 0, smooth)
+function previous() {
+    document.getElementById('slideContainer').scrollLeft -= 300;
 }
+
+//const nextButton = document.getElementById('next');
+//imgy.addEventListener('click', next);
