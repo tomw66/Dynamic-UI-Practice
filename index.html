@@ -24,13 +24,18 @@
     </div>
 <div id="navParent">
     <div id="slideContainer">
-        <div class="navButton" id='next' onclick="next()">></div>
-        <div class="navButton" id='previous' onclick="previous()"><</div>
+        <div class="navArrow" id='next' onclick="next()">></div>
+        <div class="navArrow" id='previous' onclick="previous()"><</div>
         <div id="carousel">
 
             <div id="slide1" class="slide"><img src="dpiimg1.jpg"></div>
             <div id="slide2" class="slide"><img src="300px-Windows_live_square.png"></div>
             <div id="slide3" class="slide"><img src="Wolf-300px.jpg"></div>
+        </div>
+        <div class="navDotContainer">       <!--Could generate these dynamically-->
+            <div class="navDot" id="navDot1" onclick="circleNav(this.id)"></div>
+            <div class="navDot" id="navDot2" onclick="circleNav(this.id)"></div>
+            <div class="navDot" id="navDot3" onclick="circleNav(this.id)"></div>
         </div>
     </div>
 </div>

@@ -1,7 +1,7 @@
 #parentContainer {
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 500px;
+    height: 330px;
 }
 
 #dropDownContainer {
@@ -39,12 +39,13 @@ height: 30px;
 }
 
 #slideContainer {
-    border: solid;
     width: 300px;
     margin: 0;
     padding: 0;
     overflow-x: auto;
     white-space: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
 }
 
 #carousel {
@@ -66,10 +67,10 @@ height: 30px;
     padding: 0;
 }
 
-.navButton{
+.navArrow{
     height: 20px;
     width: 20px;
-    background-color: cadetblue;
+    background-color:#bbb;
     position: absolute;
     top: 140px;
 }
@@ -81,4 +82,24 @@ height: 30px;
 #next{
     z-index: 2;
     right: 10px;
+}
+.navDotContainer {
+    width: inherit;
+    height:20px;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+}
+
+.navDot {
+    height: 20px;
+    width: 20px;
+    border: solid;
+    border-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active {
+    background-color: #bbb;;
 }
